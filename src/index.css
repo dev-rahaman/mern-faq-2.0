@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(#6d28d9, green);
+  border-radius: 10px;
+}
+
+.custom-dark {
+  background-color: #0b1121;
+}
+
+.primary-highlighter {
+  color: #6d28d9;
+}
+
+.text-primary-color {
+  color: #334155;
+}
+
+/* dark:text-[#38bdf8] */
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  --tw-text-opacity: 1;
+  color: #0f172a;
+}
+
+.scrollbar {
+  scrollbar-color: red;
+  scrollbar-width: normal;
+}
+
+.custom-shape {
+  width: 100px;
+  padding: 10px;
+  border-radius: 30px 70px 10px 50px;
+}
+
+.cart:hover > div {
+  transition: transform 0.5s;
+  transform: scale(1.05);
+}
+
+.cart-two:hover {
+  transition: transform 0.5s;
+  transform: scale(1.05);
+}
+
+.customHover {
+  transition: transform 0.5s;
+  transform: scale(1.05);
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+a svg {
+  width: 30px;
+}
