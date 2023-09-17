@@ -7,7 +7,7 @@ const Support = () => {
       id="support"
       className="lg:flex items-center justify-between my-32 gap-10"
     >
-      <div data-aos="fade-left" className="lg:w-full w-96 m-auto">
+      <div data-aos="fade-left" className="lg:w-full w-[330px] m-auto">
         <h1 className="my-5  dark:text-white">
           সার্বক্ষণিক সহায়তার জন্য থাকছে
           <span className="primary-highlighter dark:text-[#38bdf8]">
@@ -25,8 +25,8 @@ const Support = () => {
           প্রতি সপ্তাহে লাইভ সেশন থাকবে যেখানে আপনারা সরাসরি প্রশ্ন করে উত্তর
           পেতে পারবেন।
         </p>
-        <div className="flex gap-5 mt-3">
-          <button className="flex gap-1 bg-[#0f172a] dark:text-[#38bdf8] hover:bg-slate-600 rounded-[50px] py-2 px-5 text-white border-2 dark:border-[#38bdf8]">
+        <div className="lg:flex gap-5 mt-3">
+          <button className="flex justify-center gap-1 mb-5 lg:w-[250px] w-full bg-[#0f172a] dark:text-[#38bdf8] hover:bg-slate-600 rounded-[50px] py-2 px-5 text-white border-2 dark:border-[#38bdf8]">
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -42,7 +42,7 @@ const Support = () => {
             সাপোর্ট চ্যানেল
           </button>
 
-          <button className="flex gap-1 border-slate-950 border-2 rounded-[50px] py-2 px-5 text-black dark:text-[#38bdf8]  dark:border-[#38bdf8]">
+          <button className="flex justify-center gap-1 mb-5 lg:w-[250px] w-full bg-[#0f172a] dark:text-[#38bdf8] hover:bg-slate-600 rounded-[50px] py-2 px-5 text-white border-2 dark:border-[#38bdf8]">
             <svg
               stroke="currentColor"
               fill="currentColor"

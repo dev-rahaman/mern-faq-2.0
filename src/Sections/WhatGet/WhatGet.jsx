@@ -17,7 +17,6 @@ const WhatGet = () => {
         <Cart
           svgIcon={
             <div className="p-3 bg-[#eae5f8] rounded-[50px]">
-              {" "}
               <svg
                 stroke="currentColor"
                 fill="currentColor"

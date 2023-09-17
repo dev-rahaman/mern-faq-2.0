@@ -11,12 +11,12 @@ import vscode from "../../../public/vscode.svg";
 const WhatKnow = () => {
   return (
     <div id="whatKnow" className="lg:flex items-center justify-between gap-10">
-      <div className="lg:w-2/3 w-96 m-auto">
+      <div className="lg:w-2/3 w-[330px] m-5">
         <div>
           <img src={whatKnow} alt="" data-aos="fade-down" className="w-1/3" />
         </div>
         <div>
-          <h1 className="text-xl my-5  dark:text-white">
+          <h1 className="text-xl dark:text-white">
             বইটি পড়ে উপকৃত হতে{" "}
             <span className="primary-highlighter dark:text-[#38bdf8]">
               যা জানতে হবে।

@@ -25,7 +25,7 @@ const HowToReadTow = ({
               </span>
             </div>
           </div>
-          <h1 className="text-3xl py-4 font-bold  dark:text-white">
+          <h1 className="lg:text-3xl text-2xl py-4 font-bold dark:text-white">
             {readTitle}
           </h1>
           <p className="text-primary-color dark:text-[#7a899d]">

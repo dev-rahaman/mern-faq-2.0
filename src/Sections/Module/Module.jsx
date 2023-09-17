@@ -21,13 +21,13 @@ const Module = () => {
           <img
             src={ecommerce}
             alt=""
-            className="w-[500px] "
+            className="lg:w-[500px] "
             data-aos="fade-up-right"
           />
         </div>
 
         <div
-          className="w-100 p-10 h-[300px]   overflow-y-auto custom-scrollbar"
+          className="w-100 p-10 h-[300px] overflow-auto custom-scrollbar"
           data-aos="fade-up-left"
         >
           <Chapter

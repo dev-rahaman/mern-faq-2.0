@@ -32,7 +32,7 @@ const Banner = () => {
         <p className="primary-highlighter mt-3 dark:text-[#38bdf8]">
           মার্ন স্ট্যাক কমন ইন্টারভিউ কোশ্চেন।
         </p>
-        <h1 className="section-title my-3 dark:text-white">
+        <h1 className="section-title my-3 lg:text-4xl text-2xl dark:text-white">
           উত্তর দাও
           <span className="primary-highlighter dark:text-[#38bdf8]">
             {" "}
@@ -48,7 +48,7 @@ const Banner = () => {
           বুঝার পাশাপাশি এই বইয়ের প্রজেক্ট ভিত্তিক শেখানোর পদ্ধতি আপনাকে
           ইন্টারভিউতে সাফল্য অর্জন করতে সাহায্য করবে বলে আমাদের বিশ্বাস।
         </p>
-        <div className="text-center mt-10 cursor-pointer w-1/2 bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button">
+        <div className="text-center mt-10 cursor-pointer lg:w-1/2 bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button">
           <Link to={user ? "/checkout" : "/login"}>বইটি ডাউনলোড করুন</Link>
         </div>
       </div>

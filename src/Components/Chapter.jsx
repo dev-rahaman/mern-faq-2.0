@@ -15,8 +15,8 @@ const Chapter = ({
       <p className="text-xs text-primary-color dark:text-[#7a899d]">
         {ChapterTitle}
       </p>
-      <div className="flex lg:gap-4 gap-2 my-2">
-        <p className="border-2 px-2 py-1 border-violet-600 rounded-[50px] text-[12px] text-[#7950f2] font-bold  dark:border-[#38bdf8] dark:text-[#38bdf8]">
+      <div className="lg:flex lg:gap-4 gap-2 my-2 text-center">
+        <p className="border-2 px-2 py-1 mb-3 border-violet-600 rounded-[50px] text-[12px] text-[#7950f2] font-bold  dark:border-[#38bdf8] dark:text-[#38bdf8]">
           {buttonOne}
         </p>
 

@@ -22,7 +22,7 @@ const Writer = () => {
           />
         </div>
 
-        <div className="lg:w-full w-96 m-auto ">
+        <div className="lg:w-full w-[330px] m-auto ">
           <p className="text-primary-color my-5 dark:text-[#7a899d]">
             আব্দুর রহমান সুলতানী একজন প্রযুক্তি উদ্যোক্তা। বুয়েটে কম্পিউটার
             সায়েন্স এন্ড ইঞ্জিনিয়ারিং নিয়ে পড়া অবস্থায় ২০০৮ সালে তিনি প্রতিষ্ঠা
