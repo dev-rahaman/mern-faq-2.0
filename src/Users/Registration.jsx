@@ -62,14 +62,11 @@ const Registration = () => {
   };
 
   return (
-    <div className="lg:flex justify-center items-center lg:h-screen dark:bg-[#0b1324]">
+    <div className="lg:flex justify-center items-center h-[100vh] dark:bg-[#0b1324]">
       <form className="px-8 pt-6 pb-8" onSubmit={handleSubmit}>
         <h1 className="text-black dark:text-white mt-16 text-center ">
           একাউন্ট
-          <span className="primary-highlighter dark:text-[#38bdf8]">
-            {" "}
-            তৈরী{" "}
-          </span>
+          <span className="primary-highlighter dark:text-[#38bdf8]">তৈরী</span>
           করুন
         </h1>
         <p className="text-[#515d6f] text-center font-bold !text-sm dark:text-[#7a899d]">
@@ -129,22 +126,26 @@ const Registration = () => {
             লগইন করুন
           </a>
         </div>
-        <div className="inline-block mt-5">
-          <button
-            className="bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button me-5"
-            onClick={handleGoogleSignIn}
-          >
-            গুগল দিয়ে সাইন ইন
-          </button>
+        <div className="lg:flex gap-5 mt-6">
+          <div>
+            <button
+              className="w-full  mb-5 bg-purple-600  dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button me-5"
+              onClick={handleGoogleSignIn}
+            >
+              গুগল দিয়ে লগইন করুন
+            </button>
+          </div>
+          <div>
+            <button
+              className="w-full bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button"
+              onClick={handleGitHubSing}
+            >
+              গিটহাব দিয়ে লগইন করুন
+            </button>
+          </div>
         </div>
-        <button
-          className="bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button"
-          onClick={handleGitHubSing}
-        >
-          গিটহাব দিয়ে সাইন ইন
-        </button>
       </form>
-      <div className="lg:pt-32">
+      <div className="lg:pt-32 hidden lg:block">
         <img src={login} alt="login" />
       </div>
     </div>

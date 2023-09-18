@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import login from "../../public/login.webp";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
@@ -61,7 +61,7 @@ const Login = () => {
   };
 
   return (
-    <div className="lg:flex justify-center items-center lg:h-screen dark:bg-[#0b1324]">
+    <div className="lg:flex justify-center items-center h-[100vh] dark:bg-[#0b1324]">
       <form className="px-8 pt-6 pb-8" onSubmit={handleSubmit}>
         <h1 className="text-black dark:text-white mt-16 text-center ">
           <span className="primary-highlighter dark:text-[#38bdf8]">
@@ -113,16 +113,17 @@ const Login = () => {
           />
         </div>
         <p className="text-red-600 mb-5">{error}</p>
-        <div className="flex items-center justify-between">
+        <div className="lg:flex items-center justify-between">
           <button
-            className="bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button"
+            className="w-full lg:w-[200px] bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button"
             type="submit"
           >
             লগইন করুন
           </button>
+
           <a
             href="forget-pass"
-            className="text-purple-600 dark:text-[#38bdf8] text-[12px]"
+            className="text-purple-600 me-24 lg:me-0 dark:text-[#38bdf8] text-[12px]"
           >
             পাসওয়ার্ড ভুলে গেছেন?
           </a>
@@ -133,22 +134,26 @@ const Login = () => {
             একাউন্ট তৈরী করুন
           </a>
         </div>
-        <div className="inline-block mt-5">
-          <button
-            className="bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button me-5"
-            onClick={handleGoogleSignIn}
-          >
-            গুগল দিয়ে লগইন করুন
-          </button>
+        <div className="lg:flex gap-5 mt-6">
+          <div>
+            <button
+              className="w-full  mb-5 bg-purple-600  dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button me-5"
+              onClick={handleGoogleSignIn}
+            >
+              গুগল দিয়ে লগইন করুন
+            </button>
+          </div>
+          <div>
+            <button
+              className="w-full bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button"
+              onClick={handleGitHubSing}
+            >
+              গিটহাব দিয়ে লগইন করুন
+            </button>
+          </div>
         </div>
-        <button
-          className="bg-purple-600 dark:bg-[#38bdf8] text-white font-bold py-2 px-4 rounded login-button"
-          onClick={handleGitHubSing}
-        >
-          গিটহাব দিয়ে লগইন করুন
-        </button>
       </form>
-      <div className="lg:pt-32">
+      <div className="lg:pt-32 hidden lg:block">
         <img src={login} alt="login" />
       </div>
     </div>
